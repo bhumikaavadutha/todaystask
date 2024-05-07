@@ -57,6 +57,9 @@ with open(csv_file, 'r') as file:
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
 ```
 ## HISTO
+INSTALL FOLLOWING PACKAGES
+
+```numpy, opencv, matplotlib```
 ```
 import numpy as np
 import cv2 as cv
@@ -73,6 +76,7 @@ for i,col in enumerate(color):
 plt.show()
 
 ```
+## 
           
 
 
