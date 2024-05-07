@@ -1,4 +1,4 @@
-# boundingbox
+# boundingbox, crop image
 
  A tool to crop and bounding box for images
  
@@ -14,7 +14,7 @@
   
   install required packages
 
-       pip install -r requirement.txt
+       pip install -r requirements.txt
        
 ## explanation
    give the path for csv_file = "/path/"
@@ -65,7 +65,7 @@
 
    install required packages
 
-           pip install -r requirement.txt
+           pip install -r requirements.txt
 
  ## Explanation
 
@@ -130,6 +130,47 @@ Current number 7, Previous Number 6 is 13
 Current number 8, Previous Number 7 is 15
 
 Current number 9, Previous Number 8 is 17
+
+
+
+
+# Webcam
+
+ This tool is to capture the video from the webcam.
+
+## installation
+
+  install opencv using pip install
+
+## Usage 
+
+ define a vid = cv2.VideoCapture(0) for video capture
+
+ install required packages
+
+      pip install -r requirements.txt
+
+ ## Code Explanation
+
+    define video capture object
+
+             vid = cv2.VideoCapture(0)
+
+    ret, frame = vid.read() - capture video from frame by frame
+
+    cv2.imshow - display the resulting frame
+
+    vid.release()  - it use after loop release the object
+
+    cv2.destroyAllWindows() - using this destroy the all windows
+
+
+  ## Example
+
+
+    
+   
+         
   
 
  
