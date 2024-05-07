@@ -86,6 +86,55 @@
   
  ![Figure_1](https://github.com/bhumikaavadutha/todaystask/assets/169041060/c6fb4992-74b9-4e32-a3b0-11750682018a)
 
+
+
+
+
+
+# Iteration
+
+ It iterate the first 10 numbers, and in each iteration print the sum of the current and previous number.
+
+## Usage
+
+  This script print the current number, previous number, and sum of the two for each number in the range.
+
+## Explanation
+
+  intialize variable previous_num to 0
+
+  range - to print iteration from 0 to 10
+
+  calculating sum - each iteration it calculate sum of the current number with its previous number
+
+  result - it print current, previous, and its sum
+
+## Example
+
+Current number 0, Previous Number 0 is 0
+
+Current number 1, Previous Number 0 is 1
+
+Current number 2, Previous Number 1 is 3
+
+Current number 3, Previous Number 2 is 5
+
+Current number 4, Previous Number 3 is 7
+
+Current number 5, Previous Number 4 is 9
+
+Current number 6, Previous Number 5 is 11
+
+Current number 7, Previous Number 6 is 13
+
+Current number 8, Previous Number 7 is 15
+
+Current number 9, Previous Number 8 is 17
+  
+
+ 
+
+  
  
 
  
