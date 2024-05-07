@@ -51,10 +51,28 @@ with open(csv_file, 'r') as file:
         image = Image.open(image_path)
         boxes = [{'left': row['xmin'], 'top': row['ymin'], 'right': row['xmax'], 'bottom': row['ymax']}]
         cropped_images = crop_image(image, boxes)
-        for i, cropped_img in enumerate(cropped_images):
+        for i, cropped_img in enumerate(cropped_image)
             cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
         full_image_with_boxes = draw_boxes(image, boxes)
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
+```
+## HISTO
+```
+import numpy as np
+import cv2 as cv
+from matplotlib import pyplot as plt
+ 
+img = cv.imread('lotus.jpeg')
+cv.imwrite("/home/bhumika-avadutha/Desktop/programs/b.jpeg",img)
+assert img is not None, "file could not be read, check with os.path.exists()"
+color = ('b','g','r')
+for i,col in enumerate(color):
+ histr = cv.calcHist([img],[i],None,[256],[0,256])
+ plt.plot(histr,color = col)
+ plt.xlim([0,256])
+plt.show()
+
+```
           
 
 
