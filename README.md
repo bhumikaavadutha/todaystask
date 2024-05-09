@@ -156,13 +156,15 @@ Current number 9, Previous Number 8 is 17
 
              vid = cv2.VideoCapture(0)
 
-    ret, frame = vid.read() - capture video from frame by frame
-
-    cv2.imshow - display the resulting frame
-
-    vid.release()  - it use after loop release the object
-
-    cv2.destroyAllWindows() - using this destroy the all windows
+    define width and height of the frame
+    
+    cv2.VideoWriter - save the video in vedio.avi
+    
+    cv2.imshow - it show the video output
+    
+    using ord('q') to stop the recording
+    
+    
 
 
   ## Example
