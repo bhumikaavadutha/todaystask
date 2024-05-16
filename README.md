@@ -192,9 +192,6 @@ Current number 9, Previous Number 8 is 17
 
   https://github.com/bhumikaavadutha/todaystask/assets/169041060/53c936a2-34e2-4649-bc9b-9300605f5330
 
-
-
-https://github.com/bhumikaavadutha/todaystask/assets/169041060/53c936a2-34e2-4649-bc9b-9300605f5330
     
    
          
