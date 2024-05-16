@@ -1,10 +1,11 @@
 # boundingbox, crop image
 
- A tool to crop and bounding box for images
+ A tool to crop and bounding box for images using argument parser 
  
 ## Installation
 
- install pillow using pip 
+ install pillow, argparse 
+ using pip 
 
  ## usage
 
@@ -17,11 +18,11 @@
        pip install -r requirements.txt
        
 ## explanation
-   give the path for csv_file = "/path/"
-   image_dir = "/path/"
-   output_dir = "/path/"
+   parser.add_argument("--image_path") = using this syntax we give image path through the terminal
+   parser.add_argument("--csv") = using this syntax we give csv file path through the terminal
+   parser.add_argument("--out_dir") = using this syntax we give output directory path through the terminal
 
-   to crop and draw boxes we 5 parameters in this
+   to crop and draw boxes we use 5 parameters 
 
    
     image: A numpy array, channel last (ie. height x width x colors) with channels in BGR order (same as openCV format).
@@ -33,6 +34,8 @@
     use functions 
     draw_boxes - for draw the bounding box around the image
     crop_image - for crop the image 
+
+    we give the output directory name through the terminal 
     
   ## example
   
@@ -49,11 +52,11 @@
 
  # Histogram
 
-  it gives the graphical representation for RGB image
+  it gives the graphical representation for RGB image using argument parser 
 
  ## Installation 
 
-    install numpy, opencv, matplotlib 
+    install numpy, opencv, matplotlib, argparse 
 
       using pip install
 
@@ -68,10 +71,13 @@
            pip install -r requirements.txt
 
  ## Explanation
+ parser.add_argument('--image') - using this syntax we provide image path through the terminal
 
-  cv.imread - it read the image
+ parser.add_argument('--output') - using this syntax we provide the path through the terminal
 
-  cv.imwrite - it save the image
+
+  image = cv2.imread(args['image']) - it reads the image 
+  cv2.imwrite(args["output"], image) - it save the image
 
    plt.plot - it plots the histogram using matplotlib 
 
@@ -95,15 +101,21 @@
 
  It iterate the first 10 numbers, and in each iteration print the sum of the current and previous number.
 
+## Installation
+
+install argparse using pip
+
 ## Usage
 
   This script print the current number, previous number, and sum of the two for each number in the range.
 
 ## Explanation
 
-  intialize variable previous_num to 0
+  
+  parser.add_argument('current_number') - using this syntax to provide current number through the terminal
+  parser.add_argument('previous_number') - using this synatx to provide previous number through the terminal
 
-  range - to print iteration from 0 to 10
+  and we use the for loop
 
   calculating sum - each iteration it calculate sum of the current number with its previous number
 
@@ -136,11 +148,11 @@ Current number 9, Previous Number 8 is 17
 
 # Webcam
 
- This tool is to capture the video from the webcam.
+ This tool is to capture the video from the webcam using argument parser 
 
 ## installation
 
-  install opencv using pip install
+  install opencv, argparse using pip install
 
 ## Usage 
 
@@ -152,18 +164,22 @@ Current number 9, Previous Number 8 is 17
 
  ## Code Explanation
 
+    parser.add_argument("--output") - we provide output name through the terminal
+    parser.add_argument("--cam",) - we give cam to use for video compression
+
     define video capture object
 
-             vid = cv2.VideoCapture(0)
+             video = cv2.VideoCapture(0)
 
     define width and height of the frame
     
-    cv2.VideoWriter - save the video in vedio.avi
+   result = cv2.VideoWriter - creat VedioWriter object to write vedio
     
-    cv2.imshow - it show the video output
-    
-    using ord('q') to stop the recording
-    
+   cv2.imshow - use this syntax to display the frame
+
+   cv2.destroyAllWindows() - this is used to close all the frames
+
+
     
 
 
